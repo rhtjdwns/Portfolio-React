@@ -11,11 +11,11 @@
         height: 5vw;
         font-size: 4vw;
         font-weight: 900;
-        line-height: 1.6;
+        line-height: 1.2;
         font-family: var(--mainKor-font);
         text-transform: uppercase;
-        color: var(--black100);
-        border-bottom: 0.4vw solid var(--black100);
+        color: var(--white);
+        border-bottom: 0.4vw solid var(--white);
         margin-bottom: 16px;
         text-indent: -0.26vw;
 
@@ -27,11 +27,11 @@
     }
     .port__wrap {
         display: flex;
-        flex-wrap: wrap;
-        width: 7000px;
-        
+        flex-wrap: wrap;        // 자식 요소들이 부모 영역을 벗어나면 자동으로 줄 바꿈 되도록 함.
+        width: 1500px;
+
         .port__item {
-            width: 500px;
+            width: 311px;
             height: 70vh;
             background-color: var(--subBg100);
             padding: 2.5rem;
@@ -49,12 +49,10 @@
             &.p4 {
                 background-color: var(--subBg400);
             }
-            &.p5 {
-                background-color: var(--subBg500);
-            }
             .num {
                 font-size: 2rem;
                 font-family: var(--mainNum-font);
+                color: var(--white);
             }
             .img {
                 display: block;
@@ -80,15 +78,17 @@
                 text-align: center;
                 padding: 0.8rem 0;
                 font-weight: 700;
-                color: var(--black100);
-                border-bottom: 2px solid var(--black100);
+                color: var(--white);
+                border-bottom: 2px solid var(--white);
                 margin-bottom: 1rem;
             }
             .desc {
                 font-size: 1rem;
+                color: var(--white);
             }
             .site {
-                border: 1px solid var(--black100);
+                border: 1px solid var(--white);
+                color: var(--white);
                 display: block;
                 text-align: center;
                 padding: 0.625rem 1.5rem;
@@ -96,8 +96,8 @@
                 transition: all 0.2s;
     
                 &:hover {
-                    background-color: var(--black100);
-                    color: var(--white);
+                    background-color: var(--white);
+                    color: var(--black100);
                 }
             }
         }

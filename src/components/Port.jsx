@@ -6,30 +6,28 @@ const portText = [
         title: "React를 이용한 포트폴리오",
         code: "/",
         view: "https://github.com/rhtjdwns/Portfolio-React",
+        desc: "React를 이용한 포트폴리오 사이트이다.",
     },
     {
         num: "02",
         title: "React를 이용한 포트폴리오",
         code: "/",
         view: "",
+        desc: "React를 이용한 포트폴리오 사이트이다.",
     },
     {
         num: "03",
         title: "React를 이용한 포트폴리오",
         code: "/",
         view: "",
+        desc: "React를 이용한 포트폴리오 사이트이다.",
     },
     {
         num: "04",
         title: "React를 이용한 포트폴리오",
         code: "/",
         view: "",
-    },
-    {
-        num: "05",
-        title: "React를 이용한 포트폴리오",
-        code: "/",
-        view: "",
+        desc: "React를 이용한 포트폴리오 사이트이다.",
     },
 ]
 
@@ -46,6 +44,7 @@ const Port = () => {
                             <span className="num">{port.num}</span>
                             <a href={port.code} target="_blank" className="img" rel="noreferrer"></a>
                             <h3 className="title">{port.title}</h3>
+                            <p className="desc">{port.desc}</p>
                             <a href={port.view} target="_blank" className="site" rel="noreferrer">사이트 보기</a>
                         </article>
                     ))}

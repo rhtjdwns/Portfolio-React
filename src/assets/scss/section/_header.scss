@@ -5,6 +5,7 @@
 .header__inner {
     @include flex-between;
     background-color: rgba(116, 99, 99, 0.1);
+    color: var(--white);
     backdrop-filter: blur(15px);                    // 배경에 블러 효과
     padding: 1rem;                                  // 내부 여백 내용과 요소 간의 간격을 설정   
 
@@ -18,7 +19,7 @@
         em {
             font-size: 10px;
             display: block;
-            color: var(--black200);
+            color: var(--white);
         }
     }
     /* 메뉴 항목은 li와 a 태그로 구성되며 a 태그의 하위 요소에 밑줄 효과를 설정 */
@@ -76,7 +77,7 @@
                     content: '';
                     width: calc(100% - 28px);
                     height: 1px;
-                    background-color: var(--black);
+                    background-color: var(--white);
                     position: absolute;
                     left: 14px;
                     bottom: 10px;
