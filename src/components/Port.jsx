@@ -26,7 +26,7 @@ const Port = () => {
                 invalidateOnRefresh: true,
                 anticipatePin: 1,
             }
-        })
+        });
 
         return () => {
             scrollTween.kill();
@@ -46,7 +46,6 @@ const Port = () => {
                                  ref={(el) => sectionRef.current[key] = el}         
                         >
                             <span className="num">{port.num}</span>
-                            <a href={port.code} target="_blank" className="img" rel="noreferrer"></a>
                             <h3 className="title">{port.title}</h3>
                             <p className="desc">{port.desc}</p>
                             <a href={port.view} target="_blank" className="site" rel="noreferrer">사이트 보기</a>
