@@ -1,17 +1,5 @@
 import React from "react";
-
-const footerText = [
-    {
-        title: "github",
-        desc: "깃허브 주소",
-        link: "",
-    },
-    {
-        title: "github",
-        desc: "깃허브 주소",
-        link: "",
-    },
-]
+import { footerText } from "../constants/data"
 
 const Footer = () => {
     return (

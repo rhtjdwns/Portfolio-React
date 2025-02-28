@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
-
-const introText = {
-    title: "port developer",
-    desc: ["talent is", "found at the end of the", "effort"],
-};
+import { introText } from "../constants/data";
 
 const Intro = () => {
     const [scrollY, setScrollY] = useState(0);                  // 스크롤 위치 상태 관리

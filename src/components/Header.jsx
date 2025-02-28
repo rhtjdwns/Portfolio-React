@@ -1,12 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
+import { headerNav } from "../constants/data";
 
 const Header = () => {
-    const [show, setShow] = useState(false);
-
-    const toggleMenu = () => {
-        setShow((prevShow) => !prevShow);
-    }
-
     return (
         <header id="header" role="banner">
             <div className="header__inner">
@@ -36,29 +31,5 @@ const Header = () => {
         </header>
     );
 };
-
-/* 데이터를 따로 작업하여 관리함으로써 코드의 가독성과 유지보수성을 향상. */
-const headerNav = [
-    {
-        title: "intro",
-        url: "#intro",
-    },
-    {
-        title: "skill",
-        url: "#skill",
-    },
-    {
-        title: "site",
-        url: "#site",
-    },
-    {
-        title: "portfolio",
-        url: "#port",
-    },
-    {
-        title: "contact",
-        url: "#contact",
-    },
-]
 
 export default Header;

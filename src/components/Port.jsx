@@ -1,46 +1,50 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
-const portText = [
-    {
-        num: "01",
-        title: "React를 이용한 포트폴리오",
-        code: "/",
-        view: "https://github.com/rhtjdwns/Portfolio-React",
-        desc: "React를 이용한 포트폴리오 사이트이다.",
-    },
-    {
-        num: "02",
-        title: "React를 이용한 포트폴리오",
-        code: "/",
-        view: "",
-        desc: "React를 이용한 포트폴리오 사이트이다.",
-    },
-    {
-        num: "03",
-        title: "React를 이용한 포트폴리오",
-        code: "/",
-        view: "",
-        desc: "React를 이용한 포트폴리오 사이트이다.",
-    },
-    {
-        num: "04",
-        title: "React를 이용한 포트폴리오",
-        code: "/",
-        view: "",
-        desc: "React를 이용한 포트폴리오 사이트이다.",
-    },
-]
+import { portText } from "../constants/data"
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Port = () => {
+    const horRef = useRef(null);
+    const sectionRef = useRef([]);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const hor = horRef.current;
+        const sections = sectionRef.current;
+
+        let scrollTween = gsap.to(sections, {
+            xPercent: -120 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: hor,
+                start: "top 56px",
+                end: () => "+=" + hor.offsetWidth,
+                pin: true,
+                scrub: 1,
+                invalidateOnRefresh: true,
+                anticipatePin: 1,
+            }
+        })
+
+        return () => {
+            scrollTween.kill();
+        };
+    }, []);
+
     return (
-        <section id="port">
+        <section id="port" ref={horRef}>
             <div className="port__inner">
                 <div className="port__title">
                     portfolio <em>포트폴리오 작업물</em>
                 </div>
                 <div className="port__wrap">
                     {portText.map((port, key) => (
-                        <article className={`port__item p${key + 1}`} key={key}>
+                        <article className={`port__item p${key + 1}`} 
+                                 key={key}
+                                 ref={(el) => sectionRef.current[key] = el}         
+                        >
                             <span className="num">{port.num}</span>
                             <a href={port.code} target="_blank" className="img" rel="noreferrer"></a>
                             <h3 className="title">{port.title}</h3>
