@@ -10,7 +10,6 @@
     .skill__title {
         position: sticky;
         top: 70px;
-        left: 0;
         width: 48%;
         height: 5vw;
         font-size: 4vw;
@@ -37,6 +36,7 @@
         }
     }
     .skill__desc {
+        position: sticky;
         width: 50%;
         color: var(--white);
 

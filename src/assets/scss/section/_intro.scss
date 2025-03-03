@@ -41,10 +41,9 @@
 
         .text {
             font-size: 3vw;
-            line-height: 1;
+            line-height: 2;
             font-weight: 900;
             text-transform: uppercase;
-            text-decoration: underline;
             text-align: center;
             position: relative;
             z-index: 100;
@@ -54,13 +53,6 @@
             @media (max-width: 800px){ 
                 font-size: 24px;
             }
-        }
-
-        &:hover .text {
-            opacity: 0;
-        }
-        &:hover .img {
-            filter: grayscale(0);
         }
     }
     .intro__lines {

@@ -24,7 +24,7 @@ export const headerNav = [
 
 export const introText = {
     title: "port developer",
-    desc: ["talent is", "found at the end of the", "effort"],
+    desc: ["꿈을 연구하고", "탐구한다"],
 };
 
 export const skillText = [
@@ -44,7 +44,7 @@ export const skillText = [
 
 export const siteText = [
     {
-        text: ["make", "site compliant with", "react.js"],
+        text: ["make", "site with", "react.js"],
         title: "리액트를 이용한 사이트 제작",
         code: "https://github.com/rhtjdwns/Portfolio-React",
         view: "",
@@ -55,25 +55,25 @@ export const siteText = [
         ],
     },
     {
-        text: ["make", "site compliant with", "react.js"],
-        title: "리액트를 이용한 사이트 제작",
-        code: "https://github.com/rhtjdwns/Portfolio-React",
+        text: ["make", "game with", "unity"],
+        title: "유니티를 이용한 게임제작",
+        code: "https://github.com/rhtjdwns/Portfolio_T",
         view: "",
         info: [
-            "site coding",
-            "production period : two days",
-            "use stack : HTML5/CSS3, CSS Variable, Vite",
+            "game coding",
+            "production period : 3 years",
+            "use stack : Unity, C#, Github",
         ],
     },
     {
-        text: ["make", "site compliant with", "react.js"],
-        title: "리액트를 이용한 사이트 제작",
-        code: "https://github.com/rhtjdwns/Portfolio-React",
+        text: ["make", "site login with", "mysql"],
+        title: "MySQL을 이용한 로그인",
+        code: "https://github.com/rhtjdwns/Portfolio-ReactLogin",
         view: "",
         info: [
             "site coding",
             "production period : two days",
-            "use stack : HTML5/CSS3, CSS Variable, Vite",
+            "use stack : HTML5/CSS3, CSS Variable, MySQL",
         ],
     },
 ];
@@ -83,29 +83,31 @@ export const portText = [
         num: "01",
         title: "React 포트폴리오",
         desc: "React를 활용한 포트폴리오 사이트 제작",
-        code: "https://github.com/rhtjdwns/Portfolio-React",
         view: "https://port-react-rhtjdwns.netlify.app/",
     },
     {
         num: "02",
-        title: "React 포트폴리오",
-        desc: "React를 활용한 포트폴리오 사이트 제작",
-        code: "https://github.com/rhtjdwns/Portfolio-React",
-        view: "https://port-react-rhtjdwns.netlify.app/",
+        title: "React 로그인 시스템",
+        desc: "React를 활용한 카카오, 구글 로그인 제작",
+        view: "https://github.com/rhtjdwns/Portfolio-ReactLogin",
     },
     {
         num: "03",
-        title: "React 포트폴리오",
-        desc: "React를 활용한 포트폴리오 사이트 제작",
-        code: "https://github.com/rhtjdwns/Portfolio-React",
-        view: "https://port-react-rhtjdwns.netlify.app/",
+        title: "프로젝트 아치카",
+        desc: "Unity를 활용한 액션 콤보 게임 제작",
+        view: "https://store.onstove.com/ko/games/4513",
     },
     {
         num: "04",
-        title: "React 포트폴리오",
-        desc: "React를 활용한 포트폴리오 사이트 제작",
-        code: "https://github.com/rhtjdwns/Portfolio-React",
-        view: "https://port-react-rhtjdwns.netlify.app/",
+        title: "이상한 나라의 L",
+        desc: "Unity를 활용한 슈팅 게임 제작",
+        view: "https://github.com/rhtjdwns/Portfolio_T?tab=readme-ov-file#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
+    },
+    {
+        num: "05",
+        title: "밤피르",
+        desc: "Unity를 활용한 디펜스 게임 제작",
+        view: "https://github.com/rhtjdwns/Portfolio_T?tab=readme-ov-file#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
     },
 ];
 

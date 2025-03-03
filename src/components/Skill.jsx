@@ -1,7 +1,9 @@
 import React from "react";
+
 import { skillText } from "../constants/data";
 
 const Skill = () => {
+
     return (
         <section id="skill">
             <div className="skill__inner">
